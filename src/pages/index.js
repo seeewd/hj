@@ -23,12 +23,12 @@ const Wrapper = styled.div`
   width: 100px;
   height: 100px;
   padding-top: 100px;
-  background-color: blueviolet;
 `
 
 const StyledSwiper = styled(Swiper)`
   width: 100%;
-  height: 100vh;
+  height: 95vh;
+  margin-top: 5vh;
 `
 
 const StyledSwiperSlide = styled(SwiperSlide)``

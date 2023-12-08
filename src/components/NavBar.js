@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 export default function NavBar() {
   const router = useRouter()
   return (
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <nav>
       <Link href="/" legacyBehavior>
         <a className={router.pathname === '/' ? 'active' : 'deactive'}>Home</a>
       </Link>
@@ -22,12 +22,12 @@ export default function NavBar() {
         nav {
           position: fixed;
           top: 0;
+          height: 5vh;
           width: 100%;
           z-index: 1000;
-          background-color: black;
+          background-color: none;
           padding-left: 32px; 
           padding-right: 32px; 
-          display: flex;
           justify-content: space-between;
           align-items: center;
         }

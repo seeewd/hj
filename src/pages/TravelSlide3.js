@@ -1,24 +1,16 @@
 import '../styles/globals.css'
 import Image from 'next/image'
 import backgroundImg from '../images/testimg.png'
-import classes from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 
 export default function RootLayout() {
   return (
-    <div>
-      <h1>이미지 왜 안나와</h1>
-      <div className={classes.img} style={{ position: 'relative', zIndex: 1 }}>
-        <Image src={backgroundImg} alt="img" layout="fill" />
-      </div>
-      <style global jsx>{`
-        html,
-        body,
-        body > div:first-child,
-        div#__next,
-        div#__next > div {
-          height: 100%;
-        }
-      `}</style>
+    <div className={styles.background}>
+      <Image src={backgroundImg} alt="img" fill/>
+        <h1>hello</h1>
+        <h2>hello</h2>
+        <h3>hello?</h3>
+
     </div>
   )
 }
